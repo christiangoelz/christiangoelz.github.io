@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christian Johannes Gölz | Medical AI Researcher</title>
+    <meta name="description" content="Postdoctoral Researcher at LMU University Hospital Munich specializing in Medical AI, Privacy-Preserving Computing, and Biosignal Analysis.">
+    <meta name="keywords" content="Medical AI, Machine Learning, Neuroscience, Privacy-Preserving Computing, Federated Learning, ECG, Biosignals">
+    <meta name="author" content="Christian Johannes Gölz">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Christian Johannes Gölz | Medical AI Researcher">
+    <meta property="og:description" content="Postdoctoral Researcher at LMU University Hospital Munich. Medical AI · Privacy-Preserving Computing · Neuroscience.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">CG</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
+                <a href="#skills">Skills</a>
+            </div>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg">
+            <!-- Binary Heart (left side, light grey) -->
+            <svg class="binary-heart" viewBox="0 0 200 180" preserveAspectRatio="xMidYMid meet">
+                <defs>
+                    <style>
+                        .bit { font-family: 'JetBrains Mono', monospace; font-size: 5px; fill: currentColor; }
+                    </style>
+                </defs>
+                <g class="binary">
+                    <!-- Row 1: Top of lobes -->
+                    <text class="bit" x="55" y="25">0</text><text class="bit" x="61" y="25">1</text><text class="bit" x="67" y="25">1</text><text class="bit" x="73" y="25">0</text><text class="bit" x="79" y="25">1</text>
+                    <text class="bit" x="115" y="25">1</text><text class="bit" x="121" y="25">0</text><text class="bit" x="127" y="25">1</text><text class="bit" x="133" y="25">1</text><text class="bit" x="139" y="25">0</text>
+                    <!-- Row 2 -->
+                    <text class="bit" x="43" y="35">1</text><text class="bit" x="49" y="35">0</text><text class="bit" x="55" y="35">1</text><text class="bit" x="61" y="35">0</text><text class="bit" x="67" y="35">1</text><text class="bit" x="73" y="35">1</text><text class="bit" x="79" y="35">0</text><text class="bit" x="85" y="35">1</text>
+                    <text class="bit" x="109" y="35">0</text><text class="bit" x="115" y="35">1</text><text class="bit" x="121" y="35">0</text><text class="bit" x="127" y="35">1</text><text class="bit" x="133" y="35">1</text><text class="bit" x="139" y="35">0</text><text class="bit" x="145" y="35">1</text><text class="bit" x="151" y="35">0</text>
+                    <!-- Row 3 -->
+                    <text class="bit" x="37" y="45">0</text><text class="bit" x="43" y="45">1</text><text class="bit" x="49" y="45">1</text><text class="bit" x="55" y="45">0</text><text class="bit" x="61" y="45">0</text><text class="bit" x="67" y="45">1</text><text class="bit" x="73" y="45">0</text><text class="bit" x="79" y="45">1</text><text class="bit" x="85" y="45">1</text><text class="bit" x="91" y="45">0</text>
+                    <text class="bit" x="103" y="45">1</text><text class="bit" x="109" y="45">0</text><text class="bit" x="115" y="45">1</text><text class="bit" x="121" y="45">1</text><text class="bit" x="127" y="45">0</text><text class="bit" x="133" y="45">0</text><text class="bit" x="139" y="45">1</text><text class="bit" x="145" y="45">0</text><text class="bit" x="151" y="45">1</text><text class="bit" x="157" y="45">1</text>
+                    <!-- Row 4: Widest -->
+                    <text class="bit" x="31" y="55">1</text><text class="bit" x="37" y="55">0</text><text class="bit" x="43" y="55">1</text><text class="bit" x="49" y="55">1</text><text class="bit" x="55" y="55">0</text><text class="bit" x="61" y="55">1</text><text class="bit" x="67" y="55">0</text><text class="bit" x="73" y="55">0</text><text class="bit" x="79" y="55">1</text><text class="bit" x="85" y="55">1</text><text class="bit" x="91" y="55">0</text><text class="bit" x="97" y="55">1</text>
+                    <text class="bit" x="103" y="55">0</text><text class="bit" x="109" y="55">1</text><text class="bit" x="115" y="55">1</text><text class="bit" x="121" y="55">0</text><text class="bit" x="127" y="55">0</text><text class="bit" x="133" y="55">1</text><text class="bit" x="139" y="55">0</text><text class="bit" x="145" y="55">1</text><text class="bit" x="151" y="55">1</text><text class="bit" x="157" y="55">0</text><text class="bit" x="163" y="55">1</text><text class="bit" x="169" y="55">0</text>
+                    <!-- Row 5 -->
+                    <text class="bit" x="34" y="65">0</text><text class="bit" x="40" y="65">1</text><text class="bit" x="46" y="65">0</text><text class="bit" x="52" y="65">1</text><text class="bit" x="58" y="65">1</text><text class="bit" x="64" y="65">0</text><text class="bit" x="70" y="65">1</text><text class="bit" x="76" y="65">0</text><text class="bit" x="82" y="65">1</text><text class="bit" x="88" y="65">1</text><text class="bit" x="94" y="65">0</text><text class="bit" x="100" y="65">1</text><text class="bit" x="106" y="65">0</text><text class="bit" x="112" y="65">1</text><text class="bit" x="118" y="65">1</text><text class="bit" x="124" y="65">0</text><text class="bit" x="130" y="65">1</text><text class="bit" x="136" y="65">0</text><text class="bit" x="142" y="65">1</text><text class="bit" x="148" y="65">0</text><text class="bit" x="154" y="65">1</text><text class="bit" x="160" y="65">1</text><text class="bit" x="166" y="65">0</text>
+                    <!-- Row 6 -->
+                    <text class="bit" x="40" y="75">1</text><text class="bit" x="46" y="75">1</text><text class="bit" x="52" y="75">0</text><text class="bit" x="58" y="75">0</text><text class="bit" x="64" y="75">1</text><text class="bit" x="70" y="75">0</text><text class="bit" x="76" y="75">1</text><text class="bit" x="82" y="75">0</text><text class="bit" x="88" y="75">1</text><text class="bit" x="94" y="75">0</text><text class="bit" x="100" y="75">1</text><text class="bit" x="106" y="75">1</text><text class="bit" x="112" y="75">0</text><text class="bit" x="118" y="75">1</text><text class="bit" x="124" y="75">0</text><text class="bit" x="130" y="75">1</text><text class="bit" x="136" y="75">0</text><text class="bit" x="142" y="75">0</text><text class="bit" x="148" y="75">1</text><text class="bit" x="154" y="75">1</text><text class="bit" x="160" y="75">0</text>
+                    <!-- Row 7 -->
+                    <text class="bit" x="46" y="85">0</text><text class="bit" x="52" y="85">1</text><text class="bit" x="58" y="85">1</text><text class="bit" x="64" y="85">0</text><text class="bit" x="70" y="85">1</text><text class="bit" x="76" y="85">0</text><text class="bit" x="82" y="85">1</text><text class="bit" x="88" y="85">0</text><text class="bit" x="94" y="85">1</text><text class="bit" x="100" y="85">1</text><text class="bit" x="106" y="85">0</text><text class="bit" x="112" y="85">1</text><text class="bit" x="118" y="85">0</text><text class="bit" x="124" y="85">1</text><text class="bit" x="130" y="85">0</text><text class="bit" x="136" y="85">1</text><text class="bit" x="142" y="85">1</text><text class="bit" x="148" y="85">0</text><text class="bit" x="154" y="85">1</text>
+                    <!-- Row 8 -->
+                    <text class="bit" x="52" y="95">1</text><text class="bit" x="58" y="95">0</text><text class="bit" x="64" y="95">1</text><text class="bit" x="70" y="95">1</text><text class="bit" x="76" y="95">0</text><text class="bit" x="82" y="95">1</text><text class="bit" x="88" y="95">0</text><text class="bit" x="94" y="95">1</text><text class="bit" x="100" y="95">0</text><text class="bit" x="106" y="95">1</text><text class="bit" x="112" y="95">0</text><text class="bit" x="118" y="95">1</text><text class="bit" x="124" y="95">1</text><text class="bit" x="130" y="95">0</text><text class="bit" x="136" y="95">1</text><text class="bit" x="142" y="95">0</text><text class="bit" x="148" y="95">1</text>
+                    <!-- Row 9 -->
+                    <text class="bit" x="58" y="105">0</text><text class="bit" x="64" y="105">1</text><text class="bit" x="70" y="105">0</text><text class="bit" x="76" y="105">1</text><text class="bit" x="82" y="105">1</text><text class="bit" x="88" y="105">0</text><text class="bit" x="94" y="105">1</text><text class="bit" x="100" y="105">0</text><text class="bit" x="106" y="105">1</text><text class="bit" x="112" y="105">0</text><text class="bit" x="118" y="105">1</text><text class="bit" x="124" y="105">1</text><text class="bit" x="130" y="105">0</text><text class="bit" x="136" y="105">1</text><text class="bit" x="142" y="105">0</text>
+                    <!-- Row 10 -->
+                    <text class="bit" x="64" y="115">1</text><text class="bit" x="70" y="115">0</text><text class="bit" x="76" y="115">1</text><text class="bit" x="82" y="115">0</text><text class="bit" x="88" y="115">1</text><text class="bit" x="94" y="115">1</text><text class="bit" x="100" y="115">0</text><text class="bit" x="106" y="115">1</text><text class="bit" x="112" y="115">0</text><text class="bit" x="118" y="115">1</text><text class="bit" x="124" y="115">0</text><text class="bit" x="130" y="115">1</text><text class="bit" x="136" y="115">1</text>
+                    <!-- Row 11 -->
+                    <text class="bit" x="70" y="125">0</text><text class="bit" x="76" y="125">1</text><text class="bit" x="82" y="125">1</text><text class="bit" x="88" y="125">0</text><text class="bit" x="94" y="125">1</text><text class="bit" x="100" y="125">0</text><text class="bit" x="106" y="125">1</text><text class="bit" x="112" y="125">0</text><text class="bit" x="118" y="125">1</text><text class="bit" x="124" y="125">1</text><text class="bit" x="130" y="125">0</text>
+                    <!-- Row 12 -->
+                    <text class="bit" x="76" y="135">1</text><text class="bit" x="82" y="135">0</text><text class="bit" x="88" y="135">1</text><text class="bit" x="94" y="135">0</text><text class="bit" x="100" y="135">1</text><text class="bit" x="106" y="135">1</text><text class="bit" x="112" y="135">0</text><text class="bit" x="118" y="135">1</text><text class="bit" x="124" y="135">0</text>
+                    <!-- Row 13 -->
+                    <text class="bit" x="82" y="145">0</text><text class="bit" x="88" y="145">1</text><text class="bit" x="94" y="145">0</text><text class="bit" x="100" y="145">1</text><text class="bit" x="106" y="145">1</text><text class="bit" x="112" y="145">0</text><text class="bit" x="118" y="145">1</text>
+                    <!-- Row 14 -->
+                    <text class="bit" x="88" y="155">1</text><text class="bit" x="94" y="155">0</text><text class="bit" x="100" y="155">1</text><text class="bit" x="106" y="155">0</text><text class="bit" x="112" y="155">1</text>
+                    <!-- Row 15 -->
+                    <text class="bit" x="94" y="165">0</text><text class="bit" x="100" y="165">1</text><text class="bit" x="106" y="165">0</text>
+                    <!-- Tip -->
+                    <text class="bit" x="100" y="175">1</text>
+                </g>
+            </svg>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">Dr. rer. nat.</div>
+            <h1 class="hero-title">Christian Johannes Gölz</h1>
+            <p class="hero-tagline">Postdoc @ LMU Hospital · Medical AI · Privacy-Preserving Computing</p>
+            <div class="hero-links">
+                <a href="mailto:c.goelz@gmx.de" class="hero-link" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com/in/christian-gölz-53a41910b" class="hero-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg>
+                </a>
+                <a href="https://github.com/christiangoelz" class="hero-link" aria-label="GitHub" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                </a>
+                <a href="https://www.researchgate.net/profile/Christian-Goelz" class="hero-link" aria-label="ResearchGate" target="_blank" rel="noopener">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.121 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .078.53 3.193 3.193 0 0 0 .112.437c.244.744.65 1.303 1.214 1.68.565.376 1.256.564 2.073.564.244 0 .487-.015.728-.046.241-.03.48-.076.72-.138.238-.063.47-.141.694-.238.223-.096.437-.203.64-.32v-1.6a3.56 3.56 0 0 1-.951.566 2.746 2.746 0 0 1-1.03.188c-.396 0-.722-.088-.977-.265a1.458 1.458 0 0 1-.51-.701 2.477 2.477 0 0 1-.143-.72 8.18 8.18 0 0 1-.028-.727c0-.26.01-.493.028-.697.019-.205.057-.396.115-.575.057-.18.142-.34.255-.481.112-.143.264-.253.456-.333.19-.08.426-.12.707-.12.24 0 .464.03.674.093.21.062.424.158.64.287v-1.6a4.91 4.91 0 0 0-.64-.253 3.724 3.724 0 0 0-.694-.165 4.89 4.89 0 0 0-.72-.077 5.368 5.368 0 0 0-.728.05zm-9.62 2.46c-.66 0-1.234.088-1.722.262-.49.176-.9.423-1.232.74-.332.316-.583.69-.754 1.12a3.584 3.584 0 0 0-.256 1.369c0 .49.085.95.256 1.378.171.428.422.802.754 1.12.332.316.742.562 1.232.738.488.176 1.062.264 1.722.264.66 0 1.233-.088 1.72-.264.49-.176.9-.422 1.233-.739.333-.317.584-.69.755-1.12.17-.427.255-.886.255-1.377 0-.49-.085-.949-.255-1.37a3.052 3.052 0 0 0-.755-1.12 3.39 3.39 0 0 0-1.233-.74c-.487-.173-1.06-.26-1.72-.26zm0 1.4c.297 0 .543.048.74.144.197.097.357.232.48.408.123.176.213.387.27.634.056.247.084.521.084.82 0 .3-.028.573-.084.821a1.806 1.806 0 0 1-.27.634 1.232 1.232 0 0 1-.48.407c-.197.097-.443.145-.74.145-.298 0-.544-.048-.74-.145a1.232 1.232 0 0 1-.48-.407 1.806 1.806 0 0 1-.27-.634 3.723 3.723 0 0 1-.084-.82c0-.3.028-.574.083-.821.058-.247.148-.458.27-.634.124-.176.284-.311.48-.408.197-.096.443-.144.74-.144zM0 10v14h24V10zm7.577 2h1.845v2.945h2.4V12h1.845v7.6h-1.845v-3.055h-2.4V19.6H7.577zm8.56 0h1.87l1.42 5.5 1.404-5.5h1.87l-2.265 7.6h-2.035z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">About</h2>
+                <div class="about-content">
+                    <p class="about-lead">I build machine learning systems that turn physiological signals and medical images into clinical intelligence.</p>
+                    <p>As a Postdoc at <strong>LMU University Hospital Munich</strong>, I work across time series analysis for wearable-based seizure prediction and cardiological screening, medical computer vision for coronary angiography, privacy-preserving computing for cross-institutional clinical data, and LLM-powered research tools for biomedical data extraction.</p>
+                    <p>PhD in Neuroscience (summa cum laude). Interdisciplinary background in engineering, medicine, and sport science.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Section -->
+        <section id="research" class="section research">
+            <div class="container">
+                <h2 class="section-title">Research Focus</h2>
+                <div class="research-grid">
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Medical Computer Vision</h3>
+                        <p>ECG foundation model adaptation, self-supervised representation learning on angiography data, digitalization of the catheter laboratory</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                        </div>
+                        <h3>Biosignal Analysis & Wearable AI</h3>
+                        <p>Seizure detection/prediction from multimodal wearable data (ECG, PPG, EDA, accelerometry), personalized context-aware models</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                        </div>
+                        <h3>Privacy-Preserving Federated Computing</h3>
+                        <p>Secure Multiparty Computation (MPC), Federated Secure Computing platform, cross-border clinical data analytics</p>
+                    </div>
+                    <div class="research-card">
+                        <div class="research-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+                                <line x1="12" y1="19" x2="12" y2="22"/>
+                            </svg>
+                        </div>
+                        <h3>Applied LLM & Generative AI</h3>
+                        <p>RAG pipelines for biomedical literature, vision-language models for data extraction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2 class="section-title">Open Source Projects</h2>
+                <p class="section-subtitle">A selection of recent work — more on GitHub</p>
+                <div class="projects-grid">
+                    <a href="https://github.com/AIBAT-LMU/secure-median" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                            </svg>
+                            <span class="project-lang">Python</span>
+                        </div>
+                        <h3>secure-median</h3>
+                        <p>A Secure Median Implementation for the Federated Secure Computing Architecture — companion code to Applied Sciences publication</p>
+                        <div class="project-tags">
+                            <span>MPC</span>
+                            <span>Federated Computing</span>
+                            <span>Publication</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/christiangoelz/pi-mpc-demo" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                <line x1="12" y1="17" x2="12" y2="21"/>
+                            </svg>
+                            <span class="project-lang">Python</span>
+                        </div>
+                        <h3>pi-mpc-demo</h3>
+                        <p>Secure Multi-Party Computation implementation on Raspberry Pi hardware for privacy-preserving distributed computing</p>
+                        <div class="project-tags">
+                            <span>MPC</span>
+                            <span>Privacy</span>
+                            <span>Raspberry Pi</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/christiangoelz/claude-code-docker" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="7 10 10 13 7 16"/>
+                                <line x1="13" y1="16" x2="17" y2="16"/>
+                            </svg>
+                            <span class="project-lang">Shell</span>
+                        </div>
+                        <h3>claude-code-docker</h3>
+                        <p>Secure, isolated Docker environment for Claude Code with complete filesystem isolation and non-root execution</p>
+                        <div class="project-tags">
+                            <span>Docker</span>
+                            <span>Security</span>
+                            <span>DevOps</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/christiangoelz/ICTALS2025" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                            <span class="project-lang">Jupyter</span>
+                        </div>
+                        <h3>ICTALS2025</h3>
+                        <p>Workshop materials for the International Conference on Technology-Assisted Learning of Seizures — wearable-based seizure detection</p>
+                        <div class="project-tags">
+                            <span>Seizure Detection</span>
+                            <span>Wearables</span>
+                            <span>Workshop</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/christiangoelz/pet-clinic" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                            <span class="project-lang wip">WIP</span>
+                        </div>
+                        <h3>pet-clinic</h3>
+                        <p>Learning repository exploring Privacy Enhancing Technologies (PETs) including SMPC, federated learning, and differential privacy</p>
+                        <div class="project-tags">
+                            <span>PETs</span>
+                            <span>Federated Learning</span>
+                            <span>Differential Privacy</span>
+                        </div>
+                    </a>
+                </div>
+
+                <h3 class="subsection-title">Publication Code</h3>
+                <div class="publication-code-grid">
+                    <a href="https://github.com/christiangoelz/ML_selective_attention" class="publication-code-item" target="_blank" rel="noopener">
+                        <span class="pub-code-name">ML_selective_attention</span>
+                        <span class="pub-code-desc">Age-related differences in inhibitory control</span>
+                        <span class="pub-code-link">Brain Inform 2023</span>
+                    </a>
+                    <a href="https://github.com/christiangoelz/FME_classification" class="publication-code-item" target="_blank" rel="noopener">
+                        <span class="pub-code-name">FME_classification</span>
+                        <span class="pub-code-desc">Fine motor experts EEG classification</span>
+                        <span class="pub-code-link">Brain Res 2022</span>
+                    </a>
+                </div>
+
+                <div class="projects-cta">
+                    <a href="https://github.com/christiangoelz?tab=repositories" class="btn-secondary" target="_blank" rel="noopener">
+                        View all repositories
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Oct 2023 – Present</span>
+                            <h3>Postdoctoral Researcher — AI-Based Telemonitoring</h3>
+                            <p class="timeline-org">LMU University Hospital Munich</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Sep – Dec 2022</span>
+                            <h3>Visiting Scientist — DAAD Fellow</h3>
+                            <p class="timeline-org">Universidad Francisco de Vitoria & Hospital Universitario La Paz, Madrid</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Apr 2018 – Jul 2023</span>
+                            <h3>Research Associate</h3>
+                            <p class="timeline-org">Paderborn University, Institute of Sports Medicine</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Sep 2016 – Apr 2018</span>
+                            <h3>Student Research Assistant</h3>
+                            <p class="timeline-org">Paderborn University, Institute of Sports Medicine</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">Education</h3>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <div class="education-degree">Dr. rer. nat.</div>
+                        <div class="education-field">Neuroscience</div>
+                        <div class="education-meta">Paderborn University · 2024 · <em>Summa Cum Laude</em></div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-degree">M.Sc.</div>
+                        <div class="education-field">Movement and Technology</div>
+                        <div class="education-meta">Karlsruhe Institute of Technology (KIT) · 2018 · Grade 1.3</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="education-degree">B.A.</div>
+                        <div class="education-field">Applied Sport Sciences</div>
+                        <div class="education-meta">Paderborn University · 2014</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="section publications">
+            <div class="container">
+                <h2 class="section-title">Selected Publications</h2>
+                <ol class="publications-list">
+                    <li class="publication-item">
+                        <div class="publication-content">
+                            <p class="publication-authors">Ballhausen, H., ..., <strong>Goelz, C.</strong>, et al. (2024)</p>
+                            <p class="publication-title">Privacy-friendly evaluation of patient data with secure multiparty computation in a European pilot study</p>
+                            <p class="publication-journal"><em>npj Digital Medicine</em>, 7(1), 280</p>
+                        </div>
+                        <a href="https://doi.org/10.1038/s41746-024-01293-4" class="publication-doi" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li class="publication-item">
+                        <div class="publication-content">
+                            <p class="publication-authors"><strong>Goelz, C.</strong>, Vieluf, S., & Ballhausen, H. (2024)</p>
+                            <p class="publication-title">A Secure Median Implementation for the Federated Secure Computing Architecture</p>
+                            <p class="publication-journal"><em>Appl. Sci.</em>, 14(17), 7891</p>
+                        </div>
+                        <a href="https://doi.org/10.3390/app14177891" class="publication-doi" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li class="publication-item">
+                        <div class="publication-content">
+                            <p class="publication-authors"><strong>Goelz, C.</strong>, Reuter, E.-M., et al. (2023)</p>
+                            <p class="publication-title">Classification of age groups and task conditions provides additional evidence for differences in electrophysiological correlates of inhibitory control across the lifespan</p>
+                            <p class="publication-journal"><em>Brain Inform</em>, 10(1), 11</p>
+                        </div>
+                        <a href="https://doi.org/10.1186/s40708-023-00190-y" class="publication-doi" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li class="publication-item">
+                        <div class="publication-content">
+                            <p class="publication-authors">Gaidai, R.*, <strong>Goelz, C.*</strong>, et al. (2022) <span class="shared-author">[*Shared first]</span></p>
+                            <p class="publication-title">Classification characteristics of fine motor experts based on electroencephalographic and force tracking data</p>
+                            <p class="publication-journal"><em>Brain Res</em>, 1792, 148001</p>
+                        </div>
+                        <a href="https://doi.org/10.1016/j.brainres.2022.148001" class="publication-doi" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                    <li class="publication-item">
+                        <div class="publication-content">
+                            <p class="publication-authors"><strong>Goelz, C.</strong>, Mora, K., et al. (2021)</p>
+                            <p class="publication-title">Classification of visuomotor tasks based on electroencephalographic data depends on age-related differences in brain activity patterns</p>
+                            <p class="publication-journal"><em>Neural Netw</em>, 142</p>
+                        </div>
+                        <a href="https://doi.org/10.1016/j.neunet.2021.04.029" class="publication-doi" target="_blank" rel="noopener">DOI</a>
+                    </li>
+                </ol>
+
+                <h3 class="subsection-title">Selected Talks</h3>
+                <ul class="talks-list">
+                    <li>
+                        <span class="talk-year">2025</span>
+                        <span class="talk-title">Challenges in the application of ECG foundation models to out-of-domain populations</span>
+                        <span class="talk-venue">ESC Digital Health / AI Summit, Berlin</span>
+                    </li>
+                    <li>
+                        <span class="talk-year">2025</span>
+                        <span class="talk-title">Collaboration without data sharing: the Federated Secure Computing architecture</span>
+                        <span class="talk-venue">deRSE25, Karlsruhe</span>
+                    </li>
+                    <li>
+                        <span class="talk-year">2024</span>
+                        <span class="talk-title">Machine learning approaches to study signatures of age-related brain alterations</span>
+                        <span class="talk-venue">Colloquium, Universidad Francisco de Vitoria, Madrid</span>
+                    </li>
+                    <li>
+                        <span class="talk-year">2024</span>
+                        <span class="talk-title">Decoding the aging brain</span>
+                        <span class="talk-venue">Seminar Series AI and Data Science, LMU Munich</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skills-category">
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">C</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>ML / DL</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">PyTorch</span>
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">SciPy</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">MNE-Python</span>
+                            <span class="skill-tag">MLflow</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
+                        <h3>Infrastructure</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">SLURM</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Singularity</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">HPC</span>
+                            <span class="skill-tag">Ollama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="footer-name">Christian Johannes Gölz, Dr. rer. nat.</p>
+                    <p class="footer-role">Postdoctoral Researcher · LMU University Hospital Munich</p>
+                </div>
+                <div class="footer-links">
+                    <a href="mailto:c.goelz@gmx.de" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/christian-gölz-53a41910b" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/christiangoelz" aria-label="GitHub" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Christian-Goelz" aria-label="ResearchGate" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.586 0c-.818 0-1.508.19-2.073.565-.563.377-.97.936-1.213 1.68a3.193 3.193 0 0 0-.112.437 8.365 8.365 0 0 0-.078.53 9 9 0 0 0-.05.727c-.01.282-.013.621-.013 1.016a31.121 31.121 0 0 0 .014 1.017 9 9 0 0 0 .05.727 7.946 7.946 0 0 0 .078.53 3.193 3.193 0 0 0 .112.437c.244.744.65 1.303 1.214 1.68.565.376 1.256.564 2.073.564.244 0 .487-.015.728-.046.241-.03.48-.076.72-.138.238-.063.47-.141.694-.238.223-.096.437-.203.64-.32v-1.6a3.56 3.56 0 0 1-.951.566 2.746 2.746 0 0 1-1.03.188c-.396 0-.722-.088-.977-.265a1.458 1.458 0 0 1-.51-.701 2.477 2.477 0 0 1-.143-.72 8.18 8.18 0 0 1-.028-.727c0-.26.01-.493.028-.697.019-.205.057-.396.115-.575.057-.18.142-.34.255-.481.112-.143.264-.253.456-.333.19-.08.426-.12.707-.12.24 0 .464.03.674.093.21.062.424.158.64.287v-1.6a4.91 4.91 0 0 0-.64-.253 3.724 3.724 0 0 0-.694-.165 4.89 4.89 0 0 0-.72-.077 5.368 5.368 0 0 0-.728.05zm-9.62 2.46c-.66 0-1.234.088-1.722.262-.49.176-.9.423-1.232.74-.332.316-.583.69-.754 1.12a3.584 3.584 0 0 0-.256 1.369c0 .49.085.95.256 1.378.171.428.422.802.754 1.12.332.316.742.562 1.232.738.488.176 1.062.264 1.722.264.66 0 1.233-.088 1.72-.264.49-.176.9-.422 1.233-.739.333-.317.584-.69.755-1.12.17-.427.255-.886.255-1.377 0-.49-.085-.949-.255-1.37a3.052 3.052 0 0 0-.755-1.12 3.39 3.39 0 0 0-1.233-.74c-.487-.173-1.06-.26-1.72-.26zm0 1.4c.297 0 .543.048.74.144.197.097.357.232.48.408.123.176.213.387.27.634.056.247.084.521.084.82 0 .3-.028.573-.084.821a1.806 1.806 0 0 1-.27.634 1.232 1.232 0 0 1-.48.407c-.197.097-.443.145-.74.145-.298 0-.544-.048-.74-.145a1.232 1.232 0 0 1-.48-.407 1.806 1.806 0 0 1-.27-.634 3.723 3.723 0 0 1-.084-.82c0-.3.028-.574.083-.821.058-.247.148-.458.27-.634.124-.176.284-.311.48-.408.197-.096.443-.144.74-.144zM0 10v14h24V10zm7.577 2h1.845v2.945h2.4V12h1.845v7.6h-1.845v-3.055h-2.4V19.6H7.577zm8.56 0h1.87l1.42 5.5 1.404-5.5h1.87l-2.265 7.6h-2.035z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Christian Johannes Gölz</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Theme toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to dark
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
