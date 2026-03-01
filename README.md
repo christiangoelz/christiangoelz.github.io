@@ -1,15 +1,35 @@
 # Portfolio - Christian Johannes Gölz
 
-A clean, minimal personal portfolio page for GitHub Pages.
+Personal portfolio website hosted on GitHub Pages.
 
-## Quick Start
+**Live site:** [christiangoelz.github.io](https://christiangoelz.github.io)
 
-### Deploy to GitHub Pages
+## Making Changes
 
-1. Create a new repository named `yourusername.github.io`
-2. Upload all files from this folder
-3. Go to Settings > Pages > Source: Deploy from branch (main)
-4. Your site will be live at `https://yourusername.github.io`
+### Quick Edits
+
+All content is in `index.html`. Common edits:
+
+| What to change | Where to find it |
+|----------------|------------------|
+| Name, tagline | Hero section (~line 108-110) |
+| About text | About section (~line 145-155) |
+| Research cards | Research section (~line 160-205) |
+| Projects | Projects section (~line 210-320) |
+| Experience timeline | Experience section (~line 330-380) |
+| Publications | Publications section (~line 390-450) |
+| Skills | Skills section (~line 460-500) |
+| Social links | Hero links (~line 112-135) and Footer (~line 510-530) |
+
+### Styling
+
+Edit `style.css` to change:
+
+- **Colors:** CSS variables at the top (`:root` section)
+  - `--color-primary`: Navy/purple (#4A4B9A)
+  - `--color-accent`: Rose (#C43D5C)
+- **Fonts:** Google Fonts loaded in `index.html`
+- **Dark mode:** `[data-theme="dark"]` selectors
 
 ### Local Development
 
@@ -24,59 +44,36 @@ npx serve .
 php -S localhost:8000
 ```
 
-Then open `http://localhost:8000` in your browser.
+Then open `http://localhost:8000`
 
-## Customization
+### Deploying Changes
 
-### Social Links
-Update the `href` attributes in `index.html` for:
-- LinkedIn (line ~73, ~315)
-- GitHub (line ~79, ~322)
-- ResearchGate (line ~329)
-- Google Scholar (line ~85)
+```bash
+git add .
+git commit -m "Description of changes"
+git push
+```
 
-### Colors
-Edit CSS custom properties in `style.css`:
-- `--accent-primary`: Main accent color (default: cyan #06b6d4)
-- `--gradient-end`: Secondary gradient color (default: blue #3b82f6)
-- `--bg-primary`: Background color
-
-### Content
-All content is in `index.html`. Update:
-- Hero section: Name, tagline, links
-- About section: Bio text
-- Research cards: Focus areas
-- Timeline: Experience entries
-- Publications: Paper list with DOIs
-- Skills: Technical skill tags
-
-## Features
-
-- Dark/light theme toggle with localStorage persistence
-- Animated ECG waveform in hero section
-- Smooth scroll navigation
-- Responsive design (mobile-first)
-- Accessible (semantic HTML, ARIA labels)
-- Fast loading (no frameworks, minimal JS)
-- SEO optimized (meta tags, Open Graph)
-- Print-friendly styles
-- Respects prefers-reduced-motion
+Changes go live within 1-2 minutes.
 
 ## Files
 
 ```
-portfolio/
-├── index.html      # Main page
-├── style.css       # Styles
-├── favicon.svg     # Browser icon
+├── index.html      # Main page content
+├── style.css       # All styling
+├── favicon.svg     # Browser tab icon (CG monogram)
+├── .gitignore      # Git ignore rules
 └── README.md       # This file
 ```
 
-## Browser Support
+## Features
 
-- Chrome/Edge 88+
-- Firefox 78+
-- Safari 14+
+- Dark/light theme toggle (persists in localStorage)
+- Responsive design (mobile-friendly)
+- Animated binary heart background
+- Smooth scroll navigation
+- Print-friendly styles
+- SEO optimized (meta tags, Open Graph)
 
 ## License
 

@@ -1,0 +1,16 @@
+# Claude Code
+.claude/
+
+# Brief/source files
+github_portfolio_brief.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
