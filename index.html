@@ -149,7 +149,7 @@
                 <h2 class="section-title">About</h2>
                 <div class="about-content">
                     <p class="about-lead">I build machine learning systems that turn physiological signals and medical images into clinical intelligence.</p>
-                    <p>As a Postdoc at <strong>LMU University Hospital Munich</strong>, I work across time series analysis for wearable-based seizure prediction and cardiological screening, medical computer vision for coronary angiography, privacy-preserving computing for cross-institutional clinical data, and LLM-powered research tools for biomedical data extraction.</p>
+                    <p>As a Postdoc at <strong>LMU University Hospital Munich</strong>, my research centers on machine learning for clinical signals and images: representation learning on ECG, wearables, and coronary angiography; LLM systems for structured extraction and quality appraisal in clinical research; benchmarking, validation, and explainability of time-series models; and privacy-preserving computation across institutions.</p>
                     <p>Dr. rer. nat. (summa cum laude); doctoral research in computational neuroscience. Interdisciplinary background in engineering, medicine, and sport science.</p>
                 </div>
             </div>
@@ -167,17 +167,8 @@
                                 <circle cx="12" cy="12" r="3"/>
                             </svg>
                         </div>
-                        <h3>Medical Computer Vision</h3>
-                        <p>ECG foundation model adaptation, self-supervised representation learning on angiography data, digitalization of the catheter laboratory</p>
-                    </div>
-                    <div class="research-card">
-                        <div class="research-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                            </svg>
-                        </div>
-                        <h3>Biosignal Analysis & Wearable AI</h3>
-                        <p>Seizure detection/prediction from multimodal wearable data (ECG, PPG, EDA, accelerometry), personalized context-aware models</p>
+                        <h3>Perceive</h3>
+                        <p>Representation learning on clinical signals and images: self-supervised video models on coronary angiography, ECG foundation model adaptation, and multimodal wearable biosignals (ECG, PPG, EDA, accelerometry) for seizure detection and prediction</p>
                     </div>
                     <div class="research-card">
                         <div class="research-icon">
@@ -186,19 +177,17 @@
                                 <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
                             </svg>
                         </div>
-                        <h3>Privacy-Preserving Federated Computing</h3>
-                        <p>Secure Multiparty Computation (MPC), Federated Secure Computing platform, cross-border clinical data analytics</p>
+                        <h3>Trustworthy</h3>
+                        <p>Systems whose certainty and reasoning can be checked: benchmarking and validation against clinical references, explainability for time-series models, systematic evidence appraisal, and privacy-preserving computation across institutions (SMPC, federated computing)</p>
                     </div>
                     <div class="research-card">
                         <div class="research-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
-                                <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
-                                <line x1="12" y1="19" x2="12" y2="22"/>
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
                             </svg>
                         </div>
-                        <h3>Applied LLM & Generative AI</h3>
-                        <p>RAG pipelines for biomedical literature, vision-language models for data extraction</p>
+                        <h3>Communicate <span style="font-size:0.75em;opacity:0.6">(in progress)</span></h3>
+                        <p>LLMs as a communication and reasoning layer over perception models, literature, and clinical tools — following a propose–verify–approve pattern already piloted in LLM-assisted evidence workflows</p>
                     </div>
                 </div>
             </div>
@@ -210,7 +199,7 @@
                 <h2 class="section-title">Open Source Projects</h2>
                 <p class="section-subtitle">A selection of recent work — more on GitHub</p>
                 <div class="projects-grid">
-                    <a href="https://github.com/AIBAT-LMU/secure-median" class="project-card" target="_blank" rel="noopener">
+                                        <a href="https://github.com/AIBAT-LMU/secure-median" class="project-card" target="_blank" rel="noopener">
                         <div class="project-header">
                             <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
@@ -224,6 +213,24 @@
                             <span>MPC</span>
                             <span>Federated Computing</span>
                             <span>Publication</span>
+                        </div>
+                    </a>
+<a href="https://github.com/AIBAT-LMU/papermole" class="project-card" target="_blank" rel="noopener">
+                        <div class="project-header">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                            <span class="project-lang">Python</span>
+                        </div>
+                        <h3>PaperMole</h3>
+                        <p>Open-source, multi-step LLM pipeline for structured extraction and quality appraisal from scientific literature — schema validation, self-verification, human-in-the-loop review (<em>PaperMole</em>). Powered a 196-study systematic review with quantified quality control.</p>
+                        <div class="project-tags">
+                            <span>LLM Pipeline</span>
+                            <span>Systematic Reviews</span>
+                            <span>Zenodo DOI</span>
                         </div>
                     </a>
                     <a href="https://github.com/christiangoelz/pi-mpc-demo" class="project-card" target="_blank" rel="noopener">
@@ -311,6 +318,11 @@
 
                 <h3 class="subsection-title">Publication Code</h3>
                 <div class="publication-code-grid">
+                    <a href="https://github.com/AIBAT-LMU/xca-dl-review" class="publication-code-item" target="_blank" rel="noopener">
+                        <span class="pub-code-name">xca-dl-review</span>
+                        <span class="pub-code-desc">196-study structured extraction database & reproducible analysis</span>
+                        <span class="pub-code-link">Under review, npj Digital Medicine</span>
+                    </a>
                     <a href="https://github.com/christiangoelz/ML_selective_attention" class="publication-code-item" target="_blank" rel="noopener">
                         <span class="pub-code-name">ML_selective_attention</span>
                         <span class="pub-code-desc">Age-related differences in inhibitory control</span>
@@ -400,6 +412,21 @@
             <div class="container">
                 <h2 class="section-title">Selected Publications</h2>
                 <ol class="publications-list">
+                    <li class="publication-item">
+                        <div class="publication-content">
+                            <p class="publication-authors"><strong>Goelz, C.</strong>, Sams, L., Idakwo, V. O., Moehrle, P., Freyer, L., Rizas, K., & Vieluf, S.</p>
+                            <p class="publication-title">Toward clinical-grade deep learning in coronary angiography: a systematic review</p>
+                            <p class="publication-journal">Under review at <em>npj Digital Medicine</em></p>
+                        </div>
+                    </li>
+                    <li class="publication-item">
+                        <div class="publication-content">
+                            <p class="publication-authors"><strong>Goelz, C.</strong>, Schlichtiger, J., Lang, S., Brunner, S., & Vieluf, S. (2026)</p>
+                            <p class="publication-title">Challenges in the application of ECG foundation models to out-of-domain populations: an evaluation in professional athletes</p>
+                            <p class="publication-journal"><em>EHJ – Digital Health</em>, 7(Suppl. 1), ztaf143.017</p>
+                        </div>
+                        <a href="https://doi.org/10.1093/ehjdh/ztaf143.017" class="publication-doi" target="_blank" rel="noopener">DOI</a>
+                    </li>
                     <li class="publication-item">
                         <div class="publication-content">
                             <p class="publication-authors">Ballhausen, H., ..., <strong>Goelz, C.</strong>, et al. (2024)</p>
@@ -494,6 +521,16 @@
                         </div>
                     </div>
                     <div class="skills-category">
+                        <h3>LLM Engineering</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Self-hosted LLM Services (vLLM, Ollama)</span>
+                            <span class="skill-tag">Multi-step Pipeline Design</span>
+                            <span class="skill-tag">Structured Outputs &amp; Validation</span>
+                            <span class="skill-tag">Retrieval &amp; Embeddings</span>
+                            <span class="skill-tag">LLM Evaluation &amp; Human-in-the-loop QC</span>
+                        </div>
+                    </div>
+                    <div class="skills-category">
                         <h3>Infrastructure</h3>
                         <div class="skill-tags">
                             <span class="skill-tag">SLURM</span>
@@ -501,7 +538,6 @@
                             <span class="skill-tag">Singularity</span>
                             <span class="skill-tag">Git</span>
                             <span class="skill-tag">HPC</span>
-                            <span class="skill-tag">Ollama</span>
                         </div>
                     </div>
                 </div>
